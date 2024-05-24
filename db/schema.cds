@@ -1,4 +1,4 @@
-namespace riskmanagament;
+namespace riskmanagement;
 
 using {
     managed,
