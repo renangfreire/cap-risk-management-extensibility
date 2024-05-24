@@ -74,7 +74,7 @@ annotate service.Risks with @(
         {
             $Type : 'UI.DataField',
             Value : miti.descr,
-            Label : '{i18n>Mitigation}ation',
+            Label : '{i18n>Mitigation}',
         },
         {
             $Type : 'UI.DataField',
@@ -85,11 +85,13 @@ annotate service.Risks with @(
             $Type : 'UI.DataField',
             Label : '{i18n>Priocode}',
             Value : prio_code,
+            Criticality : PrioCriticality,
         },
         {
             $Type : 'UI.DataField',
             Label : '{i18n>Impact}',
             Value : impact,
+            Criticality : criticality,
         },
     ],
 );
@@ -136,11 +138,13 @@ annotate service.Risks with @(
             },{
                 $Type : 'UI.DataField',
                 Value : prio_code,
+                Criticality : PrioCriticality,
             },
             {
                 $Type : 'UI.DataField',
                 Value : impact,
                 Label : '{i18n>Impact}',
+                Criticality : impact,
             },],
     }
 );
